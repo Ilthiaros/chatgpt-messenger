@@ -13,7 +13,7 @@ function Login() {
             alt="logo"
         />
         <button 
-            onClick={() => signIn()}
+            onClick={() => signIn("google")}
             className="text-white font-boldd text-3xl animate-pulse">
             Sign In to use ChatGPT
         </button>
