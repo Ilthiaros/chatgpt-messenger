@@ -49,7 +49,5 @@ export async function POST(request: Request) {
     .collection('messages')
     .add(message);
 
-    console.log(message.text);
-
     return NextResponse.json({ answer: message.text });
 }
