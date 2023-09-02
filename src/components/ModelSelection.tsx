@@ -15,17 +15,17 @@ function ModelSelection() {
   console.log(models);
 
   return (
-    <div>  
+    <div className='mt-2'>  
       <Select 
-        className='mt-2'
+        className="mt-2"
         options={models?.modelOptions}
         defaultValue={model}
         placeholder={model}
         isSearchable
         isLoading={isLoading}
-        menuPosition='fixed'
+        menuPosition="fixed"
         classNames={{
-          control: (state) => "bg-[#434654] border-[#434654]"
+          control: (state) => "bg-[#434654] border-[#434654]",
         }}
         onChange={(e) => setModel(e.value)}
       />
